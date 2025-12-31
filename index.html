@@ -1,109 +1,159 @@
 <!DOCTYPE html>
-<html lang = "en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width = device-width, initial-scale=1.0 ">
-        <title>Magnus Forbes Kjær-Rasmussen</title>
-        <link rel="stylesheet" href="style.css" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width, initial-scale=1.0 " />
+    <title>Magnus Forbes Kjær-Rasmussen</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Introduction</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li id="nameTag">Magnus Forbes Kjær-Rasmussen</li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+      </ul>
+    </nav>
 
-
-    <style>
-        body {
-            margin: 0;
-            font-family: sans-serif;
-            font-size: 2.4rem;
-            text-align: center;
-        }
-
-        .wrapper {
-            display: grid;
-            grid-template: auto 1fr auto / auto 1fr auto;
-            height: 100vh;
-            grid-template-areas:
-                "header header header header"
-                "left main main right"
-                "footer footer footer footer";
-        }
-
-        p {
-            font-size: 1.0rem;
-        }
-
-        .section {
-            padding: 1rem;
-        }
-
-        header {
-            grid-area: header;
-            background-color: #c3f4ff8e;
-        }
-
-        .left-side {
-            grid-area: left;
-            background-color: #c3f4ff8e;
-            font-size: 1.7rem;
-        }
-
-        main {
-            grid-area: main;
-            background-color: #ffffff;
-            
-        }
-
-        .right-side {
-            grid-area: right;
-            background-color: #ffffff;
-            font-size: 1.2rem;
-
-        }
-
-        footer {
-            grid-area: footer;
-            background-color: #FFEDDB;
-            font-size: 1.0rem;
-        }
-    </style>
-</head>
-<body>
     <div class="wrapper">
-        
-        <header class="section"> Magnus Forbes Kjær-Rasmussen <br>
+      <header class="headerSection">
+        <h1></h1>
+      </header>
 
-        <form>
-            <input type="search" name="q" placeholder="Search on page" autofocus />
-            <input type="submit" value="Search" />
-         </form>
-        </header>
+      <div class="left-side">
+        <img
+          src="https://i.ibb.co/SXbLSw55/1000008802.jpg"
+          alt="Profilbillede"
+        />
+        <h3>About Me</h3>
+        <p>
+          I am 27-year-old and based in Hedehusene, Denmark. I live with my
+          lovely partner Alexandra and our 7-month-old son, who keeps everyday
+          life both busy and meaningful.
+        </p>
 
+        <p>
+          Outside of my studies and work, I enjoy gaming, programming, and
+          staying active. I play video games, enjoy playing basketball, and have
+          a strong interest in music — both listening to and creating it in my
+          spare time.
+        </p>
 
+        <p>
+          I value spending time with my family and friends and consider balance
+          between professional ambition and personal life an important part of
+          long-term success.
+        </p>
+      </div>
+      <main class="mainSection">
+        <section class="introduction">
+          <h2>About Me</h2>
+          <p>
+            I am an aspiring software engineer with a strong interest in
+            technology and programming, and I have started the Software
+            Engineering Trainee program at VIA University College. Alongside my
+            studies, I am seeking a relevant trainee position where I can
+            develop my technical skills through close collaboration with an
+            organization over an extended period of time.
+          </p>
 
-        <div class="left-side section">Certifications<br>& Languages
-            <p>something</p>
-        </div>
+          <p>
+            I would describe myself as a hands-on and curious IT enthusiast with
+            a genuine interest in computer systems, programming, electronics,
+            and digital infrastructure. In my free time, I enjoy both gaming and
+            programming, with a particular focus on Java development. Gaming has
+            strengthened my analytical thinking, teamwork, and problem-solving
+            abilities, while programming allows me to explore structured
+            thinking and continuous improvement in a practical way.
+          </p>
 
+          <p>
+            Through my previous professional experience, I have developed strong
+            skills in responsibility, communication, and documentation. At
+            Roskilde Hospital's Department of Hematology, I worked with data
+            registration and documentation in complex IT systems, including
+            national healthcare platforms and quality reporting tools.
+            Additionally, during my service in the Danish Emergency Management
+            Agency, I was entrusted with communication responsibilities, further
+            strengthening my ability to convey information clearly and reliably
+            in critical situations.
+          </p>
 
+          <p>
+            I am a fast learner and adapt quickly to new systems and
+            technologies. I am fluent in Danish, Norwegian, and English, have
+            strong proficiency in Spanish, and a basic understanding of German.
+            I enjoy working in English and would welcome an international or
+            English-speaking work environment.
+          </p>
 
-        <main class="section">My portfolio
-            <p>Main section here</p>
-        </main>
+          <p class="introduction-note">
+            On a personal level, I am a dedicated and structured individual who
+            values stability, growth, and long-term commitment. I live in
+            Hedehusene with my partner and our young son, and I am highly
+            motivated to build a meaningful and sustainable career within
+            software and cloud engineering. The trainee model at VIA University
+            College represents an ideal opportunity for me to combine academic
+            learning with hands-on industry experience, creating long-term value
+            for both the company and myself.
+          </p>
+        </section>
+      </main>
 
+      <div class="right-side">
+        <h3><em>links and more</em></h3>
 
+        <p>
+          <a href="https://mforbeskr.github.io/Kl-verlySite/"
+            ><img
+              src="https://i.ibb.co/4gFJVHp1/KLOIN.png"
+              alt="Kløverly Website"
+            />Kløverly Website</a
+          >
+        </p>
+        <p>
+          <a href="https://github.com/mforbeskr/Semester1Application"
+            ><img
+              src="https://i.ibb.co/JwMp3TbK/Sk-rmbillede-2025-12-17-121902.png"
+              alt="Whack A Jan browser game preview"
+            />
+            Kløverly Application - Java & JavaFX</a
+          >
+        </p>
 
+        <p>
+          <a href="https://mforbeskr.github.io/Browsergame-WhackAJan/"
+            ><img
+              src="https://i.ibb.co/RpL7VmxK/g5-WU5-Ydi-400x400-removebg-preview.webp"
+              alt="Whack A Jan browser game preview"
+            />Whack-A-Jan: Browser Game JavaScript</a
+          >
+        </p>
 
-        <div class="right-side section">Pictures & more
-            <p><a href="index.html" target="_blank"><img src="Profilbillede.jpg"
-                 max-width="0.1%" alt="Profilbillede"width="170" height="105"></a></p>
-        </div>
+        <p>
+          <a href="https://mforbeskr.github.io/Monster-Match/"
+            ><img
+              src="https://i.ibb.co/zTHB9qn4/monstermatch5.png"
+              alt="Whack A Jan browser game preview"
+            />Monster Match: Dating Site</a
+          >
+        </p>
 
-
-        <footer class="section"style="background:#000000; color:#946868; 
-        padding:5px; text-align:center;"> Software Engineer Trainee
-                <br>Roskilde, Denmark<br>
-                Phone: <a href="tel:+4511122233" style="color:#77e2fa;">+45 25 46 76 50</a>
-                Email: <a href="mailto:Mforbeskr@outlook.dk" style="color:#76efffe8;">Mforbeskr@outlook.dk</a>
-        
-        </footer>
-
+        <p>
+          <a href="https://mforbeskr.github.io/MinSideTest/"
+            >First Website: Minor School Task (Playground)</a
+          >
+        </p>
+      </div>
+      <footer class="footerSection">
+        Software Engineer Trainee <br />Zealand, Denmark<br />
+      </footer>
     </div>
-</body>
+  </body>
 </html>
