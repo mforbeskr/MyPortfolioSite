@@ -89,15 +89,17 @@ nav a:hover {
   padding-bottom: 0.4rem;
 }
 
-.introduction h3{
-   text-transform: uppercase;
+.introduction h3 {
+  text-transform: uppercase;
   margin-bottom: 1.5rem;
   margin-top: 2rem;
   border-bottom: 1px solid #06281291;
   padding-bottom: 0.4rem;
 }
 
-.introduction p, .introduction ul, .introduction h3{
+.introduction p,
+.introduction ul,
+.introduction h3 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.1rem;
@@ -170,9 +172,10 @@ nav a:hover {
   grid-area: right;
   max-width: 100vw;
   flex-wrap: wrap;
-  display: block;
+  flex-direction: column;
+  display: flex;
   text-align: center;
-  justify-content: center;
+  align-items: center;
   padding: 24px;
   margin-top: 14px;
   border-left: 1px solid #06281291;
@@ -182,6 +185,8 @@ nav a:hover {
 .right-side img {
   border-radius: 24px;
   max-height: 12vh;
+  display: block;
+  margin: 0 auto 0.75rem auto;
 }
 .right-side h3 {
   font-size: 0.9rem;
@@ -204,6 +209,7 @@ nav a:hover {
 .project-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: rgba(245, 254, 255, 0.327);
   border-radius: 16px;
   padding: 1rem;
@@ -213,28 +219,30 @@ nav a:hover {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.project-card:hover {
+.project-card img {
+  width: 50%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+}
+
+.project-card:hover,
+.project-card-hobbies:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 22px rgba(0, 0, 0, 0.18);
 }
 
-.project-card img {
-  width: 44%;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 44px;
-  padding: 0.75rem;
-  margin-bottom: 0.8rem;
-}
-
-.project-card h4 {
+.project-card h4,
+.project-card-hobbies h4 {
   font-size: 1rem;
   font-weight: 700;
   margin: 0.4rem 0 0.3rem;
   letter-spacing: 0.05em;
 }
 
-.project-card p {
+.project-card p,
+.project-card-hobbies p {
   font-size: 0.85rem;
   line-height: 1.4;
   opacity: 0.85;
@@ -242,54 +250,31 @@ nav a:hover {
 }
 
 /*HOBBIES SITE*/
-.hobbies-intro {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-.hobbies-intro p {
-  margin-bottom: 1.5rem;
-}
-
-.hobby-cards {
+.project-cards-hobbies {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  margin: 2rem 0;
+  align-items: stretch;
 }
 
-.hobby-card {
-  background-color: rgba(255, 255, 255, 0.5);
+.project-card-hobbies {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(245, 254, 255, 0.327);
   border-radius: 16px;
   padding: 1rem;
-  text-align: center;
+  text-decoration: none;
+  color: #000;
   border: 1px solid #4d6e59;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.hobby-card img {
+.project-card-hobbies img {
   width: 100%;
-  height: 160px;
+  height: 120px;
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 0.75rem;
-}
-
-.hobby-card h4 {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-  letter-spacing: 0.05em;
-}
-
-.hobby-card p {
-  font-size: 0.9rem;
-  line-height: 1.4;
-  opacity: 0.85;
 }
 
 /** FOOTER **/
@@ -352,7 +337,7 @@ body {
 }
 
 /*MOBILE*/
-  @media (max-width: 480px) {
+@media (max-width: 480px) {
   .left-side,
   .right-side {
     display: none;
